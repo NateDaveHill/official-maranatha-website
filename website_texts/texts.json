@@ -1,0 +1,106 @@
+{
+    "willkommen_title": {
+        "de": "Herzlich Willkommen!",
+        "en": "Welcome!"
+    },
+    "willkommen_intro": {
+        "de": "Wir sind die Maranatha Gemeinde und freuen uns, dass Du hier bist.",
+        "en": "We are the Maranatha Church and we are so glad that you are here!"
+    },
+    "willkommen_description": {
+        "de": "Als Jünger Jesu streben wir gemäß Seinem Wort in das Ebenbild Christi hinein. Hierbei unterstützen wir uns als Gemeinschaft, dass jeder innerlich stark und reif wird, um den Willen des Vaters zu tun.",
+        "en": "As disciples of Jesus, we strive according to His Word to grow into the image of Christ. In this, we support one another as a community so that everyone becomes inwardly strong and mature in order to do the will of the Father."
+    },
+    "willkommen_verse": {
+        "de": "Und seid nicht gleichförmig dieser Welt, sondern werdet verwandelt durch die Erneuerung des Sinnes, dass ihr prüft, was der Wille Gottes ist: das Gute und Wohlgefällige und Vollkommene. — Römer 12:2 (ELB)",
+        "en": "“Do not conform to this world, but be transformed by the renewal of your mind, so that you may discern what the will of God is—what is good and acceptable and perfect.”\n— Romans 12:2 (ELB)"
+    },
+    "gemeinschaft_title": {
+        "de": "Gemeinschaft",
+        "en": "Community"
+    },
+    "gemeinschaft_description": {
+        "de": "Durch die Lehren am Sonntag auf Grundlage der Bibel lernen wir Christus immer besser kennen. Außerdem tauschen wir uns in verschiedenen Gruppen für Männer, Frauen, Jugendliche und Kinder regelmäßig aus und helfen uns, die Lehre in unseren persönlichen Leben, in unseren Ehen und Familien praktisch umzusetzen. Auf diese Weise wachsen wir in Stärke, Reife und Glauben.",
+        "en": "Through Sunday teachings based on the Bible, we grow in our knowledge of Christ.\nWe also meet regularly in various groups for men, women, youth, and children, helping one another apply the teachings practically in our personal lives, marriages, and families.\nIn this way, we grow in strength, maturity, and faith."
+    },
+    "gemeinschaft_verse": {
+        "de": "Ich möchte euch ermutigen, aber auch selbst durch euren Glauben ermutigt werden. Auf diese Weise werden wir uns gegenseitig im Glauben stärken. — Römer 1:12 (NLB)",
+        "en": "“I want to encourage you in your faith, but I also want to be encouraged by yours. In this way, we will be mutually strengthened.”\n— Romans 1:12 (NLT)"
+    },
+    "leiterschaft_title": {
+        "de": "Leiterschaft",
+        "en": "Leadership"
+    },
+    "josef_susanne_role": {
+        "de": "Senior Älteste",
+        "en": "Senior Elders"
+    },
+    "josef_susanne_description": {
+        "de": "Josef und Susanne haben die Maranatha Gemeinde im Jahr 1999 auf den Ruf von Gott hin gegründet. Sie leiten die Gemeinde bis heute und stehen auch selbst innerhalb eines globalen Netzwerkes unter Leiterschaft.",
+        "en": "Josef and Susanne founded the Maranatha Church in 1999 in response to God's call. They continue to lead the church and are also under the leadership of a global network."
+    },
+    "josef_susanne_family": {
+        "de": "Josef und Susanne sind Eltern von vier erwachsenen Kindern.",
+        "en": "They are parents of four adult children."
+    },
+    "mario_diana_role": {
+        "de": "Zweite Leiter",
+        "en": "Second Leaders"
+    },
+    "mario_diana_description": {
+        "de": "Mario und Diana sind seit Gründung Teil der Maranatha Gemeinde. Als zweite Leiter stehen sie Josef und Susanne bei der Gemeindeleitung unterstützend zur Seite.",
+        "en": "Mario and Diana have been part of Maranatha Church since its founding. As second leaders, they support Josef and Susanne in church leadership."
+    },
+    "mario_diana_family": {
+        "de": "Mario und Diana sind Eltern von zwei Kindern.",
+        "en": "They have two children."
+    },
+    "netzwerk_title": {
+        "de": "Netzwerk",
+        "en": "Network"
+    },
+    "netzwerk_description": {
+        "de": "Wir sind Teil von Congress WBN, einem globalen apostolischen Netzwerk von Gemeinden unter der Leitung von Dr. Noel Woodroffe und einem globalen Leiterschafts-Team. Wir empfangen durch Congress WBN apostolische Lehre nach biblischem Vorbild. So erleben wir die Schönheit innerhalb der weltweiten Gemeinde Jesu und erhalten einen Vorgeschmack von der Einheit, die sich Jesus in Joh. 17:21 wünscht. Über die Jahre haben sich viele wertvolle Freundschaften - auch zu ganzen Gemeinden entwickelt.",
+        "en": "We are part of Congress WBN, a global apostolic network of churches led by Dr. Noel Woodroffe and a global leadership team.\nThrough Congress WBN, we receive apostolic teaching modeled after the Bible. In this way, we experience the beauty of the global body of Christ and gain a taste of the unity Jesus desires in John 17:21.\nOver the years, we have developed many valuable friendships — even with entire churches."
+    },
+    "netzwerk_verse": {
+        "de": "Und er hat die einen als Apostel gegeben und andere als Propheten, andere als Evangelisten, andere als Hirten und Lehrer, zur Ausrüstung der Heiligen für das Werk des Dienstes, für die Erbauung des Leibes Christi, bis wir alle hingelangen zur Einheit des Glaubens und der Erkenntnis des Sohnes Gottes, zur vollen Mannesreife, zum Maß der vollen Reife der Fülle Christi. — Epheser 4:11-13 (ELB)",
+        "en": "“And He gave some to be apostles, some prophets, some evangelists, some pastors and teachers,\nto equip the saints for the work of ministry, for building up the body of Christ,\nuntil we all attain to the unity of the faith and of the knowledge of the Son of God,\nto mature manhood, to the measure of the stature of the fullness of Christ.”\n— Ephesians 4:11-13 (ELB)"
+    },
+    "Impressum_title": {
+        "de": "Impressum",
+        "en": "Imprint"
+    },
+    "Impressum_Gemeinde": {
+        "de": "Gemeinde Maranatha\nElztal 34\nD-56254 Moselkern",
+        "en": "Maranatha Church\nElztal 34\nD-56254 Moselkern"
+    },
+    "Impressum_Stiftung": {
+        "de": "Stiftung Maranatha\nElztal 34\nD-56254 Moselkern",
+        "en": "Maranatha Foundation\nElztal 34\nD-56254 Moselkern"
+    },
+    "Impressum_description": {
+        "de": "Verantwortlich\nJosef Schmitt, Senior-Ältester\nTelefon: +49 160 - 973 526 41\nE-Mail: office@maranatha-gemeinde.de",
+        "en": "Responsible\nJosef Schmitt, Senior Elder\nPhone: +49 160 - 973 526 41\nEmail: office@maranatha-gemeinde.de"
+    },
+    "Impressum_finanzamt": {
+        "de": "Die Stiftung Maranatha ist eine rechtsfähige öffentliche Stiftung des bürgerlichen Rechts und vom Finanzamt Simmern-Zell als gemeinnützig anerkannt.\u2028Freistellungsbescheid vom 29.12.2020\u2028Steuernummer 40/670/04911.",
+        "en": "The Maranatha Foundation is a legally recognized public foundation under civil law and is acknowledged as a non-profit by the Simmern-Zell tax office.\nExemption notice dated 29.12.2020\nTax number: 40/670/04911"
+    },
+    "Impressum_bankverbindung": {
+        "de": "Bankverbindung Sparkasse Koblenz\nBIC MALADE51KOB\nIBAN DE57 5705 0120 0000 0254 45",
+        "en": "Bank Details (Sparkasse Koblenz)\nBIC: MALADE51KOB\nIBAN: DE57 5705 0120 0000 0254 45"
+    },
+    "Impressum_Information": {
+        "de": "Haftung für Inhalte\n\nDie Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.  \nAls Diensteanbieter sind wir gemäß § 6 Abs.1 MDStV und § 8 Abs.1 TDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Diensteanbieter sind jedoch nicht verpflichtet, die von ihnen übermittelten oder gespeicherten fremden Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.  \nVerpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+        "en": "Disclaimer (Content Liability)\nThe content of our pages was created with great care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content.\nAs a service provider, we are responsible for our own content on these pages under § 6(1) MDStV and § 8(1) TDG according to general laws.\nHowever, service providers are not obligated to monitor transmitted or stored third-party information or investigate circumstances indicating illegal activity.\nObligations to remove or block the use of information under general laws remain unaffected. Liability in this regard is only possible from the time of knowledge of a specific legal violation. If such violations become known, we will remove the content immediately."
+    },
+    "Impressum_Urheberrecht": {
+        "de": "Urheberrecht\n\nDie Betreiber der Seiten sind bemüht, stets die Urheberrechte anderer zu beachten bzw. auf selbst erstellte sowie lizenzfreie Werke zurückzugreifen. Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+        "en": "Copyright\nThe operators of these pages strive to respect the copyrights of others and/or to use self-created or license-free works.\nThe content and works created by the site operators are subject to German copyright law. Third-party contributions are marked as such.\nAny duplication, processing, distribution, or any kind of use outside the limits of copyright law requires the written consent of the respective author or creator.\nDownloads and copies of this site are only permitted for private, non-commercial use."
+    },
+    "Impressum_Haftung": {
+        "de": "Haftung für Links\n\nUnser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.  \nDie verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.  \nEine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+        "en": "Liability for Links\nOur offer contains links to external third-party websites, over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the sites is always responsible for the contents of the linked pages.\nThe linked pages were checked for possible legal violations at the time of linking. No illegal content was identified at the time.\nPermanent content control of the linked pages is not reasonable without concrete evidence of a violation. If legal violations become known, such links will be removed immediately."
+    }
+}

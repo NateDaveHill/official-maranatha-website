@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maranatha Gemeinde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+      <div>
+        <div class="spinner"></div>
+        <p style="margin-top: 20px; color: #667eea; font-weight: 500">
+          Lade Inhalte...
+        </p>
+      </div>
+    </div>
+
+    <header class="header-section">
+      <div class="container">
+        <a href="/" class="blog-home-link" aria-current="page">
+          <h1 class="blog-name">
+            <img
+              src="//images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/0070714c-2951-4996-b751-655b1adad48d/Maranatha+Logo+1.png?format=1500w"
+              alt="Maranatha Logo"
+              style="display: block; width: 200px; height: auto" />
+          </h1>
+        </a>
+        <nav class="navigation-bar">
+          <a
+            href="index.html"
+            class="nav-link<?php if(basename($_SERVER['PHP_SELF']) == 'index.php') echo ' active'; ?>"
+            >home</a
+          >
+          <a
+            href="about.html"
+            class="nav-link<?php if(basename($_SERVER['PHP_SELF']) == 'about.php') echo ' active'; ?>"
+            >about</a
+          >
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Switch language">
+            <span class="lang-option active" data-lang="de">DE</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option" data-lang="en">EN</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="blog-posts">
+            <!-- Welcome Section -->
+            <article class="blog-post fade-in">
+              <div class="section-card">
+                <figure>
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/ceda336b-e9f0-4986-8ba5-97d0fb930b91/Worship.10geschnitten.JPG?format=2500w"
+                    alt="Gemeinde in Lobpreis"
+                    class="main-image" />
+                  <figcaption class="section-card-caption">
+                    <h2 class="blog-headline" data-json-key="willkommen_title">
+                      Herzlich Willkommen!
+                    </h2>
+                    <div class="section-card-caption">
+                      <p data-json-key="willkommen_intro">
+                        Wir sind die <strong>Maranatha Gemeinde</strong> und
+                        freuen uns, dass Du hier bist.
+                      </p>
+                      <p data-json-key="willkommen_description">
+                        Als Jünger Jesu streben wir gemäß Seinem Wort in das
+                        Ebenbild Christi hinein. Hierbei unterstützen wir uns
+                        als Gemeinschaft, dass jeder innerlich stark und reif
+                        wird, um den Willen des Vaters zu tun.
+                      </p>
+                      <blockquote data-json-key="willkommen_verse">
+                        "Und seid nicht gleichförmig dieser Welt, sondern werdet
+                        verwandelt durch die Erneuerung des Sinnes, dass ihr
+                        prüft, was der Wille Gottes ist: das Gute und
+                        Wohlgefällige und Vollkommene." — Römer 12:2 (ELB)
+                      </blockquote>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Community Section -->
+            <article class="blog-post fade-in">
+              <div class="section-card">
+                <figure>
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/17341676-9731-4d19-8368-4c517545532f/Gemeinschaft1.jpg?format=2500w"
+                    alt="Gemeinschaft"
+                    class="main-image" />
+                  <figcaption class="section-card-caption">
+                    <h2
+                      class="blog-headline"
+                      data-json-key="gemeinschaft_title">
+                      Gemeinschaft
+                    </h2>
+                    <div class="blog-content">
+                      <p data-json-key="gemeinschaft_description">
+                        Durch die Lehren am Sonntag auf Grundlage der Bibel
+                        lernen wir Christus immer besser kennen. Außerdem
+                        tauschen wir uns in verschiedenen Gruppen für Männer,
+                        Frauen, Jugendliche und Kinder regelmäßig aus und helfen
+                        uns, die Lehre in unseren persönlichen Leben, in unseren
+                        Ehen und Familien praktisch umzusetzen. Auf diese Weise
+                        wachsen wir in Stärke, Reife und Glauben.
+                      </p>
+                      <blockquote data-json-key="gemeinschaft_verse">
+                        "Ich möchte euch ermutigen, aber auch selbst durch euren
+                        Glauben ermutigt werden. Auf diese Weise werden wir uns
+                        gegenseitig im Glauben stärken." — Römer 1:12 (NLB)
+                      </blockquote>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Leadership Section -->
+            <article class="blog-post fade-in">
+              <div class="section-card">
+                <figure>
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/4cbadf40-ae37-4c0f-ac61-a12d6a811b39/Weg.jpg?format=2500w"
+                    alt="Leadership"
+                    class="main-image" />
+                  <figcaption class="section-card-caption">
+                    <h2
+                      class="blog-headline"
+                      data-json-key="leiterschaft_title">
+                      Leiterschaft
+                    </h2>
+                  </figcaption>
+                  <div class="leadership-section">
+                    <div class="leadership-card fade-in">
+                      <figure>
+                        <img
+                          class="main-image"
+                          src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/eef65f4c-80be-44be-af16-7469c8d783ef/Josef.Susanne_augehellt.jpg?format=1500w"
+                          alt="Josef & Susanne Schmitt"
+                          loading="lazy"
+                          width="800"
+                          height="600" />
+                        <figcaption>
+                          <h3>Josef & Susanne Schmitt</h3>
+                          <p class="role" data-json-key="josef_susanne_role">
+                            Senior Älteste
+                          </p>
+                          <p data-json-key="josef_susanne_description">
+                            Josef und Susanne haben die Maranatha Gemeinde im
+                            Jahr 1999 auf den Ruf von Gott hin gegründet. Sie
+                            leiten die Gemeinde bis heute und stehen auch selbst
+                            innerhalb eines globalen Netzwerkes unter
+                            Leiterschaft.
+                          </p>
+                          <p data-json-key="josef_susanne_family">
+                            Josef und Susanne sind Eltern von vier erwachsenen
+                            Kindern.
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <div class="leadership-card fade-in">
+                      <figure>
+                        <img
+                          class="main-image"
+                          src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/db5fd80d-6778-4ec0-8e90-99b40f0a18ae/Hirts.jpg?format=1500w"
+                          alt="Mario & Diana Hirt"
+                          loading="lazy"
+                          width="800"
+                          height="600" />
+                        <figcaption>
+                          <h3>Mario & Diana Hirt</h3>
+                          <p class="role" data-json-key="mario_diana_role">
+                            Zweite Leiter
+                          </p>
+                          <p data-json-key="mario_diana_description">
+                            Mario und Diana sind seit Gründung Teil der
+                            Maranatha Gemeinde. Als zweite Leiter stehen sie
+                            Josef und Susanne bei der Gemeindeleitung
+                            unterstützend zur Seite.
+                          </p>
+                          <p data-json-key="mario_diana_family">
+                            Mario und Diana sind Eltern von zwei Kindern.
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Network Section -->
+            <article class="blog-post fade-in">
+              <div class="section-card">
+                <figure class="styled-image">
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/16ff39d9-d271-4ce3-bd5f-6125eb72589f/4.jpg?format=2500w"
+                    alt="Network"
+                    class="main-image" />
+                  <figcaption class="section-card-caption">
+                    <h2 class="blog-headline" data-json-key="netzwerk_title">
+                      Netzwerk
+                    </h2>
+                    <div class="blog-content">
+                      <p data-json-key="netzwerk_description">
+                        Wir sind Teil von Congress WBN, einem globalen
+                        apostolischen Netzwerk von Gemeinden unter der Leitung
+                        von Dr. Noel Woodroffe und einem globalen
+                        Leiterschafts-Team. Wir empfangen durch Congress WBN
+                        apostolische Lehre nach biblischem Vorbild. So erleben
+                        wir die Schönheit innerhalb der weltweiten Gemeinde Jesu
+                        und erhalten einen Vorgeschmack von der Einheit, die
+                        sich Jesus in Joh. 17:21 wünscht. Über die Jahre haben
+                        sich viele wertvolle Freundschaften - auch zu ganzen
+                        Gemeinden entwickelt.
+                      </p>
+                      <blockquote data-json-key="netzwerk_verse">
+                        "Und er hat die einen als Apostel gegeben und andere als
+                        Propheten, andere als Evangelisten, andere als Hirten
+                        und Lehrer, zur Ausrüstung der Heiligen für das Werk des
+                        Dienstes, für die Erbauung des Leibes Christi, bis wir
+                        alle hingelangen zur Einheit des Glaubens und der
+                        Erkenntnis des Sohnes Gottes, zur vollen Mannesreife,
+                        zum Maß der vollen Reife der Fülle Christi." — Epheser
+                        4:11-13 (ELB)
+                      </blockquote>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/config/footer.php'; ?>
+  </body>
+</html>

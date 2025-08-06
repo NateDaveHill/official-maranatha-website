@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maranatha Gemeinde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+      <div>
+        <div class="spinner"></div>
+        <p style="margin-top: 20px; color: #667eea; font-weight: 500">
+          Lade Inhalte...
+        </p>
+      </div>
+    </div>
+
+    <header class="header-section">
+      <div class="container">
+        <a href="/" class="blog-home-link" aria-current="page">
+          <h1 class="blog-name">
+            <img
+              src="//images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/0070714c-2951-4996-b751-655b1adad48d/Maranatha+Logo+1.png?format=1500w"
+              alt="Maranatha Logo"
+              style="display: block; width: 200px; height: auto" />
+          </h1>
+        </a>
+        <nav class="navigation-bar">
+          <a href="index.html" class="nav-link" aria-current="page">home</a>
+          <a href="about.html" class="nav-link active">about</a>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Switch language">
+            <span class="lang-option active" data-lang="de">DE</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option" data-lang="en">EN</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="blog-posts">
+            <!-- Welcome Section -->
+            <article class="blog-post fade-in">
+              <div class="section-card">
+                <figure>
+                  <figcaption class="section-card-caption">
+                    <h2 class="blog-headline" data-json-key="Impressum_title">
+                      Impressum
+                    </h2>
+                    <div class="section-card-caption">
+                      <p data-json-key="Impressum_Gemeinde">
+                        <strong>Gemeinde Maranatha</strong><br />
+                        Elztal 34<br />
+                        D-56254 Moselkern
+                      </p>
+                      <p
+                        data-json-key="Impressum_Stiftung"
+                        class="footer-bottom">
+                        <strong>Stiftung Maranatha</strong><br />
+                        Elztal 34<br />
+                        D-56254 Moselkern
+                      </p>
+                      <p
+                        data-json-key="Impressum_description"
+                        class="footer-bottom">
+                        <strong>Verantwortlich</strong><br />
+                        Josef Schmitt, Senior-Ältester<br />
+                        Telefon: +49 160 - 973 526 41<br />
+                        E-Mail: office@maranatha-gemeinde.de
+                      </p>
+                      <p
+                        data-json-key="Impressum_finanzamt"
+                        class="footer-bottom">
+                        Die Stiftung Maranatha ist eine rechtsfähige öffentliche
+                        Stiftung des bürgerlichen Rechts und vom Finanzamt
+                        Simmern-Zell als gemeinnützig anerkannt.<br />
+                        Freistellungsbescheid vom 29.12.2020<br />
+                        Steuernummer 40/670/04911.
+                      </p>
+                      <p
+                        data-json-key="Impressum_bankverbindung"
+                        class="footer-bottom">
+                        <strong>Bankverbindung Sparkasse Koblenz</strong><br />
+                        BIC MALADE51KOB<br />
+                        IBAN DE57 5705 0120 0000 0254 45
+                      </p>
+                      <p
+                        data-json-key="Impressum_Information"
+                        class="footer-bottom">
+                        <strong>Haftung für Inhalte</strong><br />
+                        Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+                        erstellt. Für die Richtigkeit, Vollständigkeit und
+                        Aktualität der Inhalte können wir jedoch keine Gewähr
+                        übernehmen. ...
+                      </p>
+                      <p
+                        data-json-key="Impressum_Haftung"
+                        class="footer-bottom">
+                        <strong>Haftung für Links</strong><br />
+                        Unser Angebot enthält Links zu externen Webseiten
+                        Dritter, auf deren Inhalte wir keinen Einfluss haben.
+                        ...
+                      </p>
+                      <p
+                        data-json-key="Impressum_Urheberrecht"
+                        class="footer-bottom">
+                        <strong>Urheberrecht</strong><br />
+                        Die Betreiber der Seiten sind bemüht, stets die
+                        Urheberrechte anderer zu beachten ...
+                      </p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/config/footer.php'; ?>
+  </body>
+</html>
