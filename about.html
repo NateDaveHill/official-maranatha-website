@@ -128,6 +128,14 @@
         </div>
       </div>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/config/footer.php'; ?>
+    <div id="footer"></div>
+
+        <script>
+          fetch('footer.html') // or .php if it outputs HTML
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById('footer').innerHTML = html;
+            });
+        </script> 
   </body>
 </html>

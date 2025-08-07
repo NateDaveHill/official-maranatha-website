@@ -34,12 +34,12 @@
         <nav class="navigation-bar">
           <a
             href="index.html"
-            class="nav-link<?php if(basename($_SERVER['PHP_SELF']) == 'index.php') echo ' active'; ?>"
+            class="nav-link active"
             >home</a
           >
           <a
             href="about.html"
-            class="nav-link<?php if(basename($_SERVER['PHP_SELF']) == 'about.php') echo ' active'; ?>"
+            class="nav-link"
             >about</a
           >
           <button
@@ -248,6 +248,14 @@
         </div>
       </div>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/config/footer.php'; ?>
+      <div id="footer"></div>
+
+        <script>
+          fetch('footer.html') // or .php if it outputs HTML
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById('footer').innerHTML = html;
+            });
+        </script>
   </body>
 </html>
