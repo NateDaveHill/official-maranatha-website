@@ -1,0 +1,21 @@
+title: Maranatha Gemeinde
+url: "https://natedavehill.github.io"
+baseurl: "/official-maranatha-website"
+timezone: Europe/Berlin
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+future: false
+unpublished: false
+strict_front_matter: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      lang: de
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - BLOG_SETUP.md
+  - vendor

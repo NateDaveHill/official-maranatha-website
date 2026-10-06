@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /
+---
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -7,8 +11,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+    <script src="{{ '/main.js' | relative_url }}"></script>
   </head>
   <body>
     <!-- Loading Overlay -->
@@ -23,7 +27,7 @@
 
     <header class="header-section">
       <div class="container">
-        <a href="/" class="blog-home-link" aria-current="page">
+        <a href="{{ '/' | relative_url }}" class="blog-home-link" aria-current="page">
           <h1 class="blog-name">
             <img
               src="//images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/0070714c-2951-4996-b751-655b1adad48d/Maranatha+Logo+1.png?format=1500w"
@@ -33,15 +37,16 @@
         </a>
         <nav class="navigation-bar">
           <a
-            href="index.html"
+            href="{{ '/' | relative_url }}"
             class="nav-link active"
             >home</a
           >
           <a
-            href="about.html"
+            href="{{ '/about.html' | relative_url }}"
             class="nav-link"
             >about</a
           >
+          <a href="{{ '/blog/' | relative_url }}" class="nav-link">blog</a>
           <button
             class="language-toggle"
             id="languageToggle"
@@ -248,14 +253,6 @@
         </div>
       </div>
     </main>
-      <div id="footer"></div>
-
-        <script>
-          fetch('footer.html') // or .php if it outputs HTML
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById('footer').innerHTML = html;
-            });
-        </script>
+      {% include footer.html %}
   </body>
 </html>

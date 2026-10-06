@@ -1,0 +1,23 @@
+---
+layout: blog
+permalink: /blog/
+---
+<header class="blog-heading">
+  <h1>{{ site.data.blog.title | escape }}</h1>
+  <p class="blog-intro">{{ site.data.blog.intro | escape }}</p>
+</header>
+<div class="journal-list">
+  {% for post in site.posts %}
+  <article class="journal-card">
+    {% if post.image and post.image != '' %}<img class="blog-cover" src="{{ post.image | escape }}" alt="{{ post.image_alt | default: '' | escape }}" loading="lazy">{% endif %}
+    <div class="journal-card-content">
+      <p class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>{% if post.author %} · {{ post.author | escape }}{% endif %}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+      <p>{{ post.description | escape }}</p>
+      <a class="blog-read-more" href="{{ post.url | relative_url }}" aria-label="{{ post.title | prepend: 'Weiterlesen: ' | escape }}">Weiterlesen →</a>
+    </div>
+  </article>
+  {% else %}
+  <p class="journal-card-content">Hier erscheinen bald unsere ersten Beiträge.</p>
+  {% endfor %}
+</div>

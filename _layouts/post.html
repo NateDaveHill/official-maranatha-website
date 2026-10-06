@@ -1,0 +1,13 @@
+---
+layout: blog
+---
+<article class="journal-post">
+  <a class="blog-back" href="{{ '/blog/' | relative_url }}">← Alle Beiträge</a>
+  <header>
+    <p class="blog-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d.%m.%Y' }}</time>{% if page.author %} · {{ page.author | escape }}{% endif %}</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}<p class="blog-intro">{{ page.description | escape }}</p>{% endif %}
+  </header>
+  {% if page.image and page.image != '' %}<img class="blog-cover" src="{{ page.image | escape }}" alt="{{ page.image_alt | default: '' | escape }}">{% endif %}
+  <div class="blog-prose">{{ content }}</div>
+</article>

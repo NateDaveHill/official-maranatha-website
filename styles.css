@@ -158,8 +158,8 @@ body {
 }
 
 .blog-post {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: none;
     transition: var(--transition-default);
 }
 
@@ -486,3 +486,51 @@ body {
     margin-top: 2rem;
 }
 
+/* Let long email addresses and other text wrap */
+.footer-column,
+.section-card-caption {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Make the language button easier to tap */
+.language-toggle {
+    min-height: 44px;
+    min-width: 64px;
+}
+
+@media (max-width: 768px) {
+    /* Stack footer columns on smaller screens */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Override the later 290px image rule */
+    .section-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce padding around mobile text */
+    .section-card-caption {
+        padding: 1rem;
+    }
+}
+
+/* Remove duplicate padding from nested captions */
+.section-card-caption .section-card-caption {
+    padding: 0;
+}
+/* Keep the expanded navigation usable on narrow screens. */
+.navigation-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}

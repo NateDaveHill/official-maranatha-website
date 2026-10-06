@@ -1,0 +1,59 @@
+media:
+  input: assets/uploads
+  output: /official-maranatha-website/assets/uploads
+  categories: [image]
+content:
+  - name: posts
+    label: Blogbeiträge
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: date
+        label: Datum
+        type: date
+        required: true
+      - name: published
+        label: Veröffentlicht
+        type: boolean
+        description: Ausschalten, um den Beitrag als Entwurf zu speichern.
+      - name: author
+        label: Autor
+        type: string
+      - name: description
+        label: Kurzbeschreibung
+        type: text
+        required: true
+      - name: image
+        label: Titelbild
+        type: image
+      - name: image_alt
+        label: Bildbeschreibung
+        type: string
+      - name: body
+        label: Inhalt
+        type: rich-text
+        required: true
+  - name: blog_settings
+    label: Blogseite
+    type: file
+    path: _data/blog.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Überschrift
+        type: string
+        required: true
+      - name: intro
+        label: Einführung
+        type: text
+        required: true

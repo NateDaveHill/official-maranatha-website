@@ -19,15 +19,16 @@ class MaranathaTextManager {
     async init() {
         try {
             await this.loadTexts();
-            this.setupLanguageSwitching();
-            this.setupAnimations();
-            this.setupScrollEffects();
-            this.setupImageOptimization();
-            this.hideLoading();
         } catch (error) {
-            console.error('Failed to initialize website:', error);
-            this.showError();
+            console.error('Failed to load translations:', error);
+            // Keep the German text already present in the HTML.
         }
+    
+        this.setupLanguageSwitching();
+        this.setupAnimations();
+        this.setupScrollEffects();
+        this.setupImageOptimization();
+        this.hideLoading();
     }
 
 
