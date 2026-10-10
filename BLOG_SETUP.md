@@ -64,11 +64,29 @@ bundle exec jekyll build --strict_front_matter
 - `blog/index.html`: list of published posts.
 - `_layouts/blog.html`, `_layouts/post.html`: blog and post templates.
 - `assets/blog.css`: responsive blog styling.
-- `_includes/footer.html`: shared footer for all pages. Root `footer.html` renders the same include for compatibility.
+- `_includes/footer.html`: shared footer for all pages.
 
 New posts get a dated filename automatically; the CMS date field controls publication date. No custom layout field is needed because Jekyll applies the post layout through `_config.yml`.
 
-The blog starts in German. The existing DE/EN switch still controls the original pages; it does not translate blog posts. Bilingual posts would be a separate addition.
+## Languages and unlisted testing
+
+All pages share `_includes/header.html` with DE / EN / RU buttons. Translation data is embedded at build time; there is no runtime translation fetch or loading overlay. `_data/translations.json` is the single source for homepage, imprint, navigation, and footer translations: each key contains `de`, `en`, and `ru`. Edit `_data/translations.json` directly.
+
+Russian translations are an initial draft, including informational translations of the existing legal text. Scripture wording is translated from the existing German text, not attributed to a Russian Bible edition. Have a Russian speaker review it before public release.
+
+Blog heading/introduction translations are in `_data/blog.yml` and editable under Blogseite. Posts keep German title/description/body and optional `title_en`, `description_en`, `body_en`, `title_ru`, `description_ru`, `body_ru` fields, all available in Pages CMS. Missing translations fall back to German. The sample post has all three languages. Choosing a language updates the document language, URL, navigation links, and saved preference.
+
+The Blog link opens a coming-soon page with a temporary password popup. `_data/blog-access.yml` sets the throwaway password. An empty password disables unlocking. This is a VISUAL GATE ONLY: posts are built publicly and can be read in the page source. Never use a real account password or confidential content. The gate covers blog and post pages, and remembers access for the current browser tab via sessionStorage.
+
+Local preview of the actual blog:
+
+```sh
+bundle exec jekyll serve --config _config.yml,_config.preview.yml
+```
+
+When ready to publish: set `blog_public: true` and remove the robots meta tag from `_layouts/blog.html`.
+
+Jekyll is required: it renders shared includes, templates, translation data, and Markdown posts. The root footer compatibility page and old translation JSON endpoint have been removed because the site no longer uses them. `_data/translations.json` and `_includes/footer.html` are the sources to edit.
 
 ## 5. If you use a custom domain
 

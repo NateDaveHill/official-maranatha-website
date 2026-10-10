@@ -534,3 +534,20 @@ body {
     align-items: center;
     min-height: 44px;
 }
+
+/* Shared language selector: each language is keyboard and touch accessible. */
+.site-logo { display: block; width: 200px; max-width: 100%; height: auto; }
+.language-toggle { padding: 0 4px; cursor: default; }
+.language-toggle .lang-option {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: .8rem;
+    min-width: 40px;
+    min-height: 44px;
+    cursor: pointer;
+}
+.language-toggle .lang-option.active { color: var(--color-primary-dark); }
+.lang-option:focus-visible, .nav-link:focus-visible { outline: 2px solid var(--color-primary-dark); outline-offset: 2px; }
+[data-content-lang][hidden] { display: none !important; }

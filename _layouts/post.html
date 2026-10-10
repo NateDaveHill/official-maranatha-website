@@ -1,13 +1,17 @@
 ---
 layout: blog
 ---
-<article class="journal-post">
-  <a class="blog-back" href="{{ '/blog/' | relative_url }}">← Alle Beiträge</a>
+<article class="section-card journal-post">
+  <a class="blog-back" data-json-key="blog_back" href="{{ '/blog/' | relative_url }}">← Alle Beiträge</a>
   <header>
     <p class="blog-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d.%m.%Y' }}</time>{% if page.author %} · {{ page.author | escape }}{% endif %}</p>
-    <h1>{{ page.title | escape }}</h1>
-    {% if page.description %}<p class="blog-intro">{{ page.description | escape }}</p>{% endif %}
+    <h1>{% include localized.html de=page.title en=page.title_en ru=page.title_ru %}</h1>
+    {% if page.description %}<p class="blog-intro">{% include localized.html de=page.description en=page.description_en ru=page.description_ru %}</p>{% endif %}
   </header>
   {% if page.image and page.image != '' %}<img class="blog-cover" src="{{ page.image | escape }}" alt="{{ page.image_alt | default: '' | escape }}">{% endif %}
-  <div class="blog-prose">{{ content }}</div>
+  <div class="blog-prose" data-localized>
+    <div data-content-lang="de" lang="de">{{ content }}</div>
+    <div data-content-lang="en" lang="{% if page.body_en %}en{% else %}de{% endif %}" hidden>{{ page.body_en | default: content | markdownify }}</div>
+    <div data-content-lang="ru" lang="{% if page.body_ru %}ru{% else %}de{% endif %}" hidden>{{ page.body_ru | default: content | markdownify }}</div>
+  </div>
 </article>

@@ -1,0 +1,19 @@
+<header class="section-card section-card-caption blog-heading">
+  <h1>{% include localized.html de=site.data.blog.title en=site.data.blog.title_en ru=site.data.blog.title_ru %}</h1>
+  <p class="blog-intro">{% include localized.html de=site.data.blog.intro en=site.data.blog.intro_en ru=site.data.blog.intro_ru %}</p>
+</header>
+<div class="blog-posts journal-list">
+  {% for post in site.posts %}
+  <article class="section-card journal-card">
+    {% if post.image and post.image != '' %}<img class="blog-cover" src="{{ post.image | escape }}" alt="{{ post.image_alt | default: '' | escape }}" loading="lazy">{% endif %}
+    <div class="journal-card-content">
+      <p class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>{% if post.author %} · {{ post.author | escape }}{% endif %}</p>
+      <h2><a href="{{ post.url | relative_url }}">{% include localized.html de=post.title en=post.title_en ru=post.title_ru %}</a></h2>
+      <p>{% include localized.html de=post.description en=post.description_en ru=post.description_ru %}</p>
+      <a class="blog-read-more" href="{{ post.url | relative_url }}" data-json-key="blog_read">Weiterlesen →</a>
+    </div>
+  </article>
+  {% else %}
+  <p class="journal-card-content" data-json-key="blog_empty">Hier erscheinen bald unsere ersten Beiträge.</p>
+  {% endfor %}
+</div>

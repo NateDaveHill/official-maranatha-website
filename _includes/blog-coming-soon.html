@@ -1,0 +1,17 @@
+<section class="section-card blog-coming-soon">
+  <p class="blog-meta" data-json-key="blog_status">Demnächst verfügbar</p>
+  <h1 data-json-key="blog_soon_title">Unser Blog entsteht gerade.</h1>
+  <p class="blog-intro" data-json-key="blog_soon_text">Wir arbeiten an dieser Seite und werden sie bald veröffentlichen. Schau gerne wieder vorbei!</p>
+  <button type="button" class="blog-login-button" id="blogLoginOpen" data-json-key="blog_login">Redaktion anmelden</button>
+</section>
+<dialog class="blog-login-dialog" id="blogLoginDialog" aria-labelledby="blogLoginTitle">
+  <h2 id="blogLoginTitle" data-json-key="blog_login">Redaktion anmelden</h2>
+  <p data-json-key="blog_login_help">Gib das Vorschau-Passwort ein, um den Blog anzusehen.</p>
+  <form id="blogPasswordForm">
+    <label for="blogPassword" data-json-key="blog_password">Passwort</label>
+    <input id="blogPassword" name="password" type="password" autocomplete="current-password" required>
+    <p id="blogLoginError" role="alert" data-json-key="blog_password_error" hidden>Das Passwort ist nicht korrekt.</p>
+    <button type="submit" class="blog-login-button" data-json-key="blog_unlock">Vorschau öffnen</button>
+  </form>
+  <form method="dialog"><button class="blog-dialog-close" data-json-key="blog_close">Schließen</button></form>
+</dialog>

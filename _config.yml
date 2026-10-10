@@ -7,6 +7,7 @@ permalink: /blog/:year/:month/:day/:title/
 future: false
 unpublished: false
 strict_front_matter: true
+blog_public: false
 defaults:
   - scope:
       path: ""
@@ -19,3 +20,4 @@ exclude:
   - Gemfile.lock
   - BLOG_SETUP.md
   - vendor
+  - _config.preview.yml

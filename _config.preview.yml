@@ -1,0 +1,8 @@
+# Local preview only: do not use this configuration for public deployment.
+blog_preview: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - BLOG_SETUP.md
+  - vendor
+  - _config.preview.yml

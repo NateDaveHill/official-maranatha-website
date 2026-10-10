@@ -12,52 +12,9 @@ permalink: /
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
-    <script src="{{ '/main.js' | relative_url }}"></script>
   </head>
   <body>
-    <!-- Loading Overlay -->
-    <div id="loadingOverlay" class="loading-overlay">
-      <div>
-        <div class="spinner"></div>
-        <p style="margin-top: 20px; color: #667eea; font-weight: 500">
-          Lade Inhalte...
-        </p>
-      </div>
-    </div>
-
-    <header class="header-section">
-      <div class="container">
-        <a href="{{ '/' | relative_url }}" class="blog-home-link" aria-current="page">
-          <h1 class="blog-name">
-            <img
-              src="//images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/0070714c-2951-4996-b751-655b1adad48d/Maranatha+Logo+1.png?format=1500w"
-              alt="Maranatha Logo"
-              style="display: block; width: 200px; height: auto" />
-          </h1>
-        </a>
-        <nav class="navigation-bar">
-          <a
-            href="{{ '/' | relative_url }}"
-            class="nav-link active"
-            >home</a
-          >
-          <a
-            href="{{ '/about.html' | relative_url }}"
-            class="nav-link"
-            >about</a
-          >
-          <a href="{{ '/blog/' | relative_url }}" class="nav-link">blog</a>
-          <button
-            class="language-toggle"
-            id="languageToggle"
-            aria-label="Switch language">
-            <span class="lang-option active" data-lang="de">DE</span>
-            <span class="lang-divider">|</span>
-            <span class="lang-option" data-lang="en">EN</span>
-          </button>
-        </nav>
-      </div>
-    </header>
+    {% include header.html %}
 
     <main class="main-section">
       <div class="container">
@@ -254,5 +211,6 @@ permalink: /
       </div>
     </main>
       {% include footer.html %}
+    {% include translations.html %}
   </body>
 </html>

@@ -1,0 +1,19 @@
+<header class="header-section">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="blog-home-link">
+      <img class="site-logo" src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/0070714c-2951-4996-b751-655b1adad48d/Maranatha+Logo+1.png?format=500w" alt="Maranatha Gemeinde">
+    </a>
+    <nav class="navigation-bar" aria-label="Navigation">
+      <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}" data-json-key="nav_home"{% if page.url == '/' %} aria-current="page"{% endif %}>Startseite</a>
+      <a href="{{ '/about.html' | relative_url }}" class="nav-link{% if page.url == '/about.html' %} active{% endif %}" data-json-key="nav_about"{% if page.url == '/about.html' %} aria-current="page"{% endif %}>Über uns</a>
+      <a href="{{ '/blog/' | relative_url }}" class="nav-link{% if page.layout == 'blog' or page.layout == 'post' %} active{% endif %}" data-json-key="nav_blog">Blog</a>
+      <div class="language-toggle" role="group" aria-label="Sprache / Language / Язык">
+        <button type="button" class="lang-option active" data-lang="de" aria-pressed="true" aria-label="Deutsch">DE</button>
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <button type="button" class="lang-option" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <button type="button" class="lang-option" data-lang="ru" aria-pressed="false" aria-label="Русский">RU</button>
+      </div>
+    </nav>
+  </div>
+</header>

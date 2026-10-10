@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: 'de' | escape }}">
   <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.data.blog.title | escape }} | {{ site.title | escape }}</title>
     <meta name="description" content="{{ page.description | default: site.data.blog.intro | escape }}">
@@ -10,21 +11,18 @@
     <link rel="stylesheet" href="{{ '/assets/blog.css' | relative_url }}">
   </head>
   <body>
-    <header class="header-section">
-      <div class="container">
-        <a href="{{ '/' | relative_url }}" class="blog-home-link">
-          <img class="blog-logo" src="https://images.squarespace-cdn.com/content/v1/662679d937b7bc3b18b12ea0/0070714c-2951-4996-b751-655b1adad48d/Maranatha+Logo+1.png?format=500w" alt="Maranatha Gemeinde">
-        </a>
-        <nav class="navigation-bar" aria-label="Hauptnavigation">
-          <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
-          <a href="{{ '/about.html' | relative_url }}" class="nav-link">About</a>
-          <a href="{{ '/blog/' | relative_url }}" class="nav-link active"{% if page.url == '/blog/' %} aria-current="page"{% endif %}>Blog</a>
-        </nav>
-      </div>
-    </header>
+    {% include header.html %}
     <main class="main-section">
-      <div class="container blog-container">{{ content }}</div>
+      <div class="container"><div class="content-wrapper">
+        {% if site.blog_public or site.blog_preview %}
+          {{ content }}
+        {% else %}
+          <div id="blogGate" data-password="{{ site.data.blog-access.password | escape }}">{% include blog-coming-soon.html %}</div>
+          <div id="blogUnlocked" hidden>{{ content }}</div>
+        {% endif %}
+      </div></div>
     </main>
     {% include footer.html %}
+    {% include translations.html %}
   </body>
 </html>

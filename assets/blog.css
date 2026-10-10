@@ -1,6 +1,5 @@
-.blog-container { max-width: 900px; }
 .blog-logo { display: block; width: 200px; max-width: 100%; height: auto; }
-.blog-heading { margin-bottom: 2rem; color: #fff; }
+.blog-heading { margin-bottom: 2rem; color: var(--color-text); }
 .blog-heading h1, .journal-post h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.2; margin-bottom: 1rem; }
 .blog-intro { font-size: 1.1rem; }
 .journal-list { display: grid; gap: 2rem; }
@@ -23,3 +22,16 @@
 .blog-prose pre, .blog-prose table { display: block; max-width: 100%; overflow-x: auto; }
 .blog-prose a { color: #0056b3; }
 a:focus-visible { outline: 3px solid #0056b3; outline-offset: 4px; }
+
+.blog-coming-soon { max-width: 800px; margin: 0 auto; padding: clamp(1.5rem, 5vw, 4rem); text-align: center; }
+.blog-coming-soon h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.25; margin-bottom: 1.5rem; }
+.blog-login-button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .75rem 1.25rem; margin-top: 1.5rem; border: 0; border-radius: 8px; background: #0056b3; color: white; font: inherit; text-decoration: none; cursor: pointer; }
+.blog-login-dialog { margin: auto; width: min(480px, calc(100% - 2rem)); max-height: calc(100% - 2rem); overflow: auto; padding: 2rem; border: 0; border-radius: 16px; line-height: 1.6; }
+.blog-login-dialog::backdrop { background: rgba(0,0,0,.55); }
+.blog-login-dialog h2 { margin-bottom: 1rem; }
+.blog-dialog-close { margin-top: 1rem; min-height: 44px; padding: .5rem 1rem; background: transparent; border: 1px solid #bbb; border-radius: 8px; font: inherit; cursor: pointer; }
+
+#blogGate[hidden], #blogUnlocked[hidden] { display: none !important; }
+#blogPasswordForm label { display: block; margin-top: 1rem; }
+#blogPassword { width: 100%; min-height: 44px; padding: .75rem; border: 1px solid #bbb; border-radius: 8px; font: inherit; }
+#blogLoginError { color: #a32020; margin-top: .75rem; }

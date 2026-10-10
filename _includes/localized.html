@@ -1,0 +1,5 @@
+<span data-localized>
+  <span data-content-lang="de" lang="de">{{ include.de | escape }}</span>
+  <span data-content-lang="{% if include.en %}en{% else %}de{% endif %}" lang="{% if include.en %}en{% else %}de{% endif %}" hidden>{{ include.en | default: include.de | escape }}</span>
+  <span data-content-lang="{% if include.ru %}ru{% else %}de{% endif %}" lang="{% if include.ru %}ru{% else %}de{% endif %}" hidden>{{ include.ru | default: include.de | escape }}</span>
+</span>

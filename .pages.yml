@@ -43,6 +43,24 @@ content:
         label: Inhalt
         type: rich-text
         required: true
+      - name: title_en
+        label: "Title (English)"
+        type: string
+      - name: description_en
+        label: "Summary (English)"
+        type: text
+      - name: body_en
+        label: "Article (English)"
+        type: rich-text
+      - name: title_ru
+        label: "Title (Русский)"
+        type: string
+      - name: description_ru
+        label: "Summary (Русский)"
+        type: text
+      - name: body_ru
+        label: "Article (Русский)"
+        type: rich-text
   - name: blog_settings
     label: Blogseite
     type: file
@@ -57,3 +75,15 @@ content:
         label: Einführung
         type: text
         required: true
+      - name: title_en
+        label: "title (English)"
+        type: string
+      - name: intro_en
+        label: "intro (English)"
+        type: text
+      - name: title_ru
+        label: "title (Русский)"
+        type: string
+      - name: intro_ru
+        label: "intro (Русский)"
+        type: text
