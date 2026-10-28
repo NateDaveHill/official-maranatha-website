@@ -1,6 +1,6 @@
 title: Maranatha Gemeinde
-url: "https://natedavehill.github.io"
-baseurl: "/official-maranatha-website"
+url: "https://maranatha-gemeinde.com"
+baseurl: ""
 timezone: Europe/Berlin
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/

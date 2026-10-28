@@ -17,9 +17,9 @@ Use branch publishing for this setup: it runs GitHub's built-in Jekyll build aft
 
 Watch the Pages build in **Actions**. The expected project URL is:
 
-https://natedavehill.github.io/official-maranatha-website/blog/
+https://maranatha-gemeinde.com/blog/
 
-This URL assumes the repository uses its default GitHub Pages domain. The sample post is dated 6 October 2026 and can be edited or removed.
+The site is configured for the custom domain `maranatha-gemeinde.com`; `CNAME` preserves that domain for branch publishing. The sample post is dated 6 October 2026 and can be edited or removed.
 
 ## 2. Connect Pages CMS
 
@@ -47,7 +47,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open http://localhost:4000/official-maranatha-website/blog/ . A plain static server or opening the HTML file directly cannot render Jekyll templates.
+Open http://localhost:4000/blog/ . A plain static server or opening the HTML file directly cannot render Jekyll templates.
 
 To check a production build:
 

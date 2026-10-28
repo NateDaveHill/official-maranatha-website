@@ -1,6 +1,6 @@
 media:
   input: assets/uploads
-  output: /official-maranatha-website/assets/uploads
+  output: /assets/uploads
   categories: [image]
 content:
   - name: posts
