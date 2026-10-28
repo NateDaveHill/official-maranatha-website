@@ -132,116 +132,116 @@
   "nav_home": {
     "de": "Startseite",
     "en": "Home",
-    "ru": "TBD"
+    "ru": "Главная"
   },
   "nav_about": {
     "de": "Über uns",
     "en": "About",
-    "ru": "TBD"
+    "ru": "О нас"
   },
   "nav_blog": {
     "de": "Blog",
     "en": "Blog",
-    "ru": "TBD"
+    "ru": "Блог"
   },
   "blog_back": {
     "de": "← Alle Beiträge",
     "en": "← All posts",
-    "ru": "TBD"
+    "ru": "← Все записи"
   },
   "blog_read": {
     "de": "Weiterlesen →",
     "en": "Read more →",
-    "ru": "TBD"
+    "ru": "Читать далее →"
   },
   "blog_empty": {
     "de": "Hier erscheinen bald unsere ersten Beiträge.",
     "en": "Our first posts will appear here soon.",
-    "ru": "TBD"
+    "ru": "Здесь скоро появятся наши первые записи."
   },
   "footer_church": {
     "de": "Maranatha Gemeinde",
     "en": "Maranatha Church",
-    "ru": "TBD"
+    "ru": "Община «Маранафа»"
   },
   "footer_service": {
     "de": "Gottesdienst",
     "en": "Church service",
-    "ru": "TBD"
+    "ru": "Богослужение"
   },
   "footer_time": {
     "de": "Jeden Sonntag 10:00 Uhr bis ca. 12:30 Uhr",
     "en": "Every Sunday from 10:00 to approximately 12:30",
-    "ru": "TBD"
+    "ru": "Каждое воскресенье с 10:00 примерно до 12:30"
   },
   "footer_translation": {
     "de": "mit englischer Übersetzung",
     "en": "with English translation",
-    "ru": "TBD"
+    "ru": "с переводом на английский язык"
   },
   "footer_online": {
     "de": "auch Online-Teilnahme möglich",
     "en": "Online participation is also available",
-    "ru": "TBD"
+    "ru": "Также можно участвовать онлайн"
   },
   "footer_contact": {
     "de": "Kontakt",
     "en": "Contact",
-    "ru": "TBD"
+    "ru": "Контакты"
   },
   "footer_phone": {
     "de": "Telefon: +49 160 - 973 526 41",
     "en": "Phone: +49 160 - 973 526 41",
-    "ru": "TBD"
+    "ru": "Телефон: +49 160 - 973 526 41"
   },
   "blog_status": {
     "de": "Demnächst verfügbar",
     "en": "Coming soon",
-    "ru": "TBD"
+    "ru": "Скоро открытие"
   },
   "blog_soon_title": {
     "de": "Unser Blog entsteht gerade.",
     "en": "Our blog is on its way.",
-    "ru": "TBD"
+    "ru": "Мы готовим наш блог."
   },
   "blog_soon_text": {
     "de": "Wir arbeiten an dieser Seite und werden sie bald veröffentlichen. Schau gerne wieder vorbei!",
     "en": "We are working on this page and will publish it soon. Please check back!",
-    "ru": "TBD"
+    "ru": "Мы работаем над этой страницей и скоро её опубликуем. Заходите к нам снова!"
   },
   "blog_login": {
     "de": "Vorschau anmelden",
     "en": "Preview login",
-    "ru": "TBD"
+    "ru": "Вход в предпросмотр"
   },
   "blog_login_help": {
     "de": "Gib das Vorschau-Passwort ein, um den Blog anzusehen.",
     "en": "Enter the preview password to view the blog.",
-    "ru": "TBD"
+    "ru": "Введите пароль для предварительного просмотра блога."
   },
   "blog_cms": {
     "de": "Pages CMS öffnen",
     "en": "Open Pages CMS",
-    "ru": "TBD"
+    "ru": "Открыть Pages CMS"
   },
   "blog_close": {
     "de": "Schließen",
     "en": "Close",
-    "ru": "TBD"
+    "ru": "Закрыть"
   },
   "blog_password": {
     "de": "Passwort",
     "en": "Password",
-    "ru": "TBD"
+    "ru": "Пароль"
   },
   "blog_unlock": {
     "de": "Vorschau öffnen",
     "en": "Open preview",
-    "ru": "TBD"
+    "ru": "Открыть предпросмотр"
   },
   "blog_password_error": {
     "de": "Das Passwort ist nicht korrekt.",
     "en": "The password is incorrect.",
-    "ru": "TBD"
+    "ru": "Неверный пароль."
   }
 }
