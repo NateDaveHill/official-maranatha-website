@@ -1,2 +1,2 @@
 <script id="website-translations" type="application/json">{{ site.data.translations | jsonify | replace: '</', '<\/' }}</script>
-<script src="{{ '/main.js' | relative_url }}"></script>
+<script src="{{ '/main.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

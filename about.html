@@ -11,7 +11,7 @@ permalink: /about.html
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
   </head>
   <body>
     {% include header.html %}
