@@ -257,13 +257,8 @@ body {
     width: 100%;
     overflow: hidden;
     transition: var(--transition-default);
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-.leadership-card.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 .leadership-card:hover {
