@@ -17,9 +17,9 @@ Use branch publishing for this setup: it runs GitHub's built-in Jekyll build aft
 
 Watch the Pages build in **Actions**. The expected project URL is:
 
-https://maranatha-gemeinde.com/blog/
+https://maranatha-gemeinde.de/blog/
 
-The site is configured for the custom domain `maranatha-gemeinde.com`; `CNAME` preserves that domain for branch publishing. The sample post is dated 6 October 2026 and can be edited or removed.
+The site is configured for the custom domain `maranatha-gemeinde.de`; `CNAME` preserves that domain for branch publishing. The sample post is dated 6 October 2026 and can be edited or removed.
 
 ## 2. Connect Pages CMS
 
